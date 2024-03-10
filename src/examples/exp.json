@@ -1,0 +1,113 @@
+[{
+		"Proj_index": 1,
+		"Proj_title": "How to blink an LED",
+		"Proj_picture": "examples/pimgs/1.png",
+		"Proj_tutorial": "https://magicbit.cc/getting-started-micropython/",
+		"Proj_desc": "This project is about how to blink an LED . ",
+		"Proj_py" : "1.py"
+	},
+	{
+		"Proj_index": 2,
+		"Proj_title": "Reading the State of Push Button",
+		"Proj_picture": "examples/pimgs/2.png",
+		"Proj_tutorial": "https://magicbit.cc/reading-the-state-of-push-button/",
+		"Proj_desc": "Learn how to read the state of push button",
+		"Proj_py" : "2.py"
+	},
+	{
+		"Proj_index": 3,
+		"Proj_title": "Working With Analog Write",
+		"Proj_picture": "examples/pimgs/3.png",
+		"Proj_tutorial": "https://magicbit.cc/working-with-analog-write-2/",
+		"Proj_desc": "Use PWM to control the brightness of a LED",
+		"Proj_py" : "3.py"
+	},
+	{
+		"Proj_index": 4,
+		"Proj_title": "Read an Analog Signal",
+		"Proj_picture": "examples/pimgs/4.png",
+		"Proj_tutorial": "https://magicbit.cc/reading-an-analog-signal-2/",
+		"Proj_desc": "Control an output from an analog input",
+		"Proj_py" : "4.py"
+	},
+	{
+		"Proj_index": 5,
+		"Proj_title": "Generating Tones",
+		"Proj_picture": "examples/pimgs/5.png",
+		"Proj_tutorial": "https://magicbit.cc/generating-tones-2/",
+		"Proj_desc": "Generate a tone on the onboard Buzzer from square waves",
+		"Proj_py" : "5.py"
+	},
+	{
+		"Proj_index": 6,
+		"Proj_title": "Use the onboard OLED Screen",
+		"Proj_picture": "examples/pimgs/6.png",
+		"Proj_tutorial": "https://magicbit.cc/onboard-led-screen-2/",
+		"Proj_desc": "Display text, simple logos and images in the OLED screen",
+		"Proj_py" : "6.py"
+	},
+	{
+		"Proj_index": 7,
+		"Proj_title": "Proximity Senosor",
+		"Proj_picture": "examples/pimgs/7.png",
+		"Proj_tutorial": "https://magicbit.cc/working-with-analog-write-2/",
+		"Proj_desc": "Learn to turn a physical parameter to analog electric current",
+		"Proj_py" : "7.py"
+	},
+	{
+		"Proj_index": 8,
+		"Proj_title": "How to Use Tilt Senosor",
+		"Proj_picture": "examples/pimgs/8.png",
+		"Proj_tutorial": "https://magicbit.cc/tilt-sensor-2/",
+		"Proj_desc": "Learn how to use tilt sensor as a switch",
+		"Proj_py" : "8.py"
+	},
+	{
+		"Proj_index": 9,
+		"Proj_title": "How to Use Flame Sensor",
+		"Proj_picture": "examples/pimgs/9.png",
+		"Proj_tutorial": "https://magicbit.cc/flame-sensor-2/",
+		"Proj_desc": "Use flame sensor to identify infrared/heat bodies",
+		"Proj_py" : "9.py"
+	},
+	{
+		"Proj_index": 10,
+		"Proj_title": "Door Sensor",
+		"Proj_picture": "examples/pimgs/10.png",
+		"Proj_tutorial": "https://magicbit.cc/door-sensor-2/",
+		"Proj_desc": "Using a reed switch as a door sensor",
+		"Proj_py" : "10.py"
+	},
+	{
+		"Proj_index": 11,
+		"Proj_title": "Magicbit Servo",
+		"Proj_picture": "examples/pimgs/11.png",
+		"Proj_tutorial": "https://magicbit.cc/magicbit-servo-2/",
+		"Proj_desc": "Using a servo motor with Magicbit",
+		"Proj_py" : "11.py"
+	},
+	{
+		"Proj_index": 12,
+		"Proj_title": "Motion Sensor",
+		"Proj_picture": "examples/pimgs/12.png",
+		"Proj_tutorial": "https://magicbit.cc/motion-sensor-2/",
+		"Proj_desc": "Use a motion sensor to detect motion",
+		"Proj_py" : "12.py"
+	},
+	{
+		"Proj_index": 13,
+		"Proj_title": "RGB Module",
+		"Proj_picture": "examples/pimgs/13.png",
+		"Proj_tutorial": "https://magicbit.cc/rgb-module-2/",
+		"Proj_desc": "Use RGB LED to change colors as required",
+		"Proj_py" : "13.py"
+	},
+	{
+		"Proj_index": 14,
+		"Proj_title": "Magnetic Sensor",
+		"Proj_picture": "examples/pimgs/14.png",
+		"Proj_tutorial": "https://magicbit.cc/magnetic-sensor-2/",
+		"Proj_desc": "Use hall effect sensor to detect magnetic fields",
+		"Proj_py" : "14.py"
+	}
+]

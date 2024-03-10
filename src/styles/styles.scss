@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    // font-family: "Open Sans", sans-serif;
+    font-family: "Rubik", sans-serif;
+
+    & nav{
+        width: 100%;
+        height: 9vh;
+        border-bottom: 1px solid rgb(218, 218, 218);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0vw 2vw 0vw 2vw;
+        box-sizing: border-box;
+
+        & img{
+            width: 17%;
+            min-width: 40px;
+        }
+
+        & .left{
+            display: flex;
+            width: 20%;
+            max-width: 325px;
+            align-items: center;
+            justify-content: space-between;
+
+            & .title{
+                font-weight: 700;
+                font-size: 1.6vw;
+                color: rgb(57, 57, 57);
+            }
+
+
+            & .live{
+                background: red;
+                padding: 2px;
+                padding-left: 12px;
+                padding-right: 12px;
+                border-radius: 20px;
+                color: white;
+                font-size: 1.25vw;
+                font-weight: 600;
+            }
+        }
+
+        & .right{
+            width: 10%;
+            height: 90%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            
+
+            & button{
+                height: 70%;
+                width: 85%;
+                min-width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background: rgb(236, 153, 0);
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                font-size: 1.1vw;
+                color: rgb(255, 255, 255);
+            }
+
+            & button:hover{
+                background: rgb(255, 169, 9);
+            }
+        }
+    }
+
+    & .container{
+        width: 100%;
+        height: 91vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: 0.4fr 1fr 0.55fr;
+        grid-gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgb(240, 240, 240);
+        z-index: 50;
+        & .gridCom{
+            // background: white;
+        }
+
+        & .leftExplorer{
+            background: transparent;
+            overflow-x: none;
+            overflow-y: scroll;
+            scroll-margin-left: 5px;
+        }
+
+        & .middle{
+
+            & .compnav{
+                height:6%;
+                max-height: 50px;
+                display: flex;
+                width: 100%;
+                background: #000;
+                justify-content: space-between;
+                // background: #282730;
+                background: #ffffff;
+                padding-left: 1%;
+                padding-right: 3%;
+                box-sizing: border-box;
+                align-items: center;
+                // margin-bottom: 5px;
+                border: 1px solid rgb(210, 210, 210);
+                box-sizing: border-box;
+
+                & h2{
+                    font-weight: 400;
+                    font-size: 1.15vw;
+                    color: #0d0d0d;
+                }
+
+                & .left{
+                    display: flex;
+                  
+                    width: 20%;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                & .buttons{
+                    width: 20%;
+                    height: 72.5%;
+                    // border: 1px solid black ;
+                    display: flex;
+                    justify-content: space-between;
+
+                    & .btn-act{
+                        width: 45%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        border-radius: 5px;
+                        border: none;
+                        outline: none;
+                        font-size: 0.9vw;
+                        cursor: pointer;
+                        
+                    }
+
+                    & .run{
+                        background: rgb(231, 255, 195);
+                        border: 1px solid gray;
+                    }
+
+                    & .stop{
+                        background: rgb(255, 207, 207);
+                        border: 1px solid gray;
+                    }
+                }
+            }
+            .editorContainer{
+                height: 100%;
+                
+                    & .codemirror{
+                        font-size: 1vw !important;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid rgb(212, 212, 212);
+                        border-top: none;
+                        
+                    }
+                
+            }
+        }
+
+
+        & .right{
+            height: 100%;
+            
+
+            .Consolecontainer{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 28vw;
+                scrollbar-width: thin;
+                scrollbar-base-color: #000;
+
+                & .compnav{
+                    height:7%;
+                    max-height: 50px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    // background: #282730;
+                    background: #292931;
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    box-sizing: border-box;
+                    align-items: center;
+                    // margin-bottom: 5px;
+                    border-bottom: 1px solid white;
+                    scrollbar-width: thin;
+
+                    & h2{
+                        font-weight: 400;
+                        font-size: 1.15vw;
+                        color: #ffffff;
+                    }
+
+                    & .left{
+                        display: flex;
+                        width: 27.5%;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+            
+                & .codemirror-out{
+                    font-size: 1vw;
+             
+                    scrollbar-width: thin;
+                    width: 100%;
+                    font-size: 0.9vw !important;
+                    
+                }
+
+                    .cm-gutters{
+                        display: none !important;
+                        width: 0;
+                    }
+                }
+            
+        }
+    }
+}
+
+
+
+.ExamplesPop{
+    width: 50vw;
+    height: 70vh;
+    background: white;
+    position: fixed;
+    z-index: 101;
+    top: 9vh;
+    width: 60vw;
+    left: 20%;
+    height: 85vh;
+    top: 12vh;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    & .content{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+
+        & .navExmp{
+            height: 10%;
+            position: relative;
+            background: white;
+            border-bottom: 1px solid rgb(220, 220, 220);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding: 1%;
+            box-sizing: border-box;
+            
+    
+            & .headTitle{
+                font-weight: 500;
+                font-size: 1.5vw;
+            }
+        }
+    
+        & .tiles{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2.5%;
+            padding: 10px;
+            box-sizing: border-box;
+            background: rgb(247, 247, 247);
+            
+
+            & .exampleTile{
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgb(220, 220, 220);
+                border-radius: 5px;
+                // padding: 2.5%;
+                box-sizing: border-box;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+           
+                
+
+                & img{
+                    width: 100%;
+                }
+
+                & .tileContent{
+                    padding: 2%;
+                    padding-top: 0%;
+                    box-sizing: border-box;
+
+                    & .title{
+                        font-size: 1.1vw;
+                        font-weight: 400;
+                        padding: 5px;
+                        box-sizing: border-box;
+                        margin-bottom: 10px;
+                    }
+
+                    & .description{
+                        font-size: 0.9vw;
+                        padding: 5px;
+                        box-sizing: border-box;
+                        font-weight: 300;
+                    }
+
+                    & .tute{
+                        height: 5vh;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        
+                        & button{
+                            width: 30%;
+                            height: 80%;
+                            border: none;
+                            outline: none;
+                            font-size: 1vw;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            letter-spacing: 1px;
+                        }
+
+                        & .code{
+                            background: rgb(176, 176, 255);
+                            border: 1px solid rgb(218, 218, 254);
+                            
+                        }
+
+                        & .learn{
+                            background: rgb(255, 153, 153);
+                            
+                            & a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+
+
+}
