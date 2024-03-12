@@ -7,6 +7,7 @@ import { Http } from '@mui/icons-material';
 import {useNavigate, useLocation} from 'react-router-dom'
 import { useState, useRef } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import useObserver from './useObserver'
 
 const LandingPage = () => {
 
@@ -16,10 +17,19 @@ const LandingPage = () => {
     const userRef = useRef()
     const passRef = useRef()
 
+    const userRefcon = useRef()
+    const passRefcon = useRef()
+
+    const mainLogo = useRef()
+    const para = useRef()
+    const botBtn = useRef()
+
+    const headAnim = useObserver(mainLogo.current, "appear");
+    const paraAnim = useObserver(para.current, "appearPara");
+    const btmBtn = useObserver(botBtn.current, "appearPara");
     
 
     const login = () => {
-       
 
         let userName = userRef.current.value 
         let passw = passRef.current.value 
@@ -34,7 +44,14 @@ const LandingPage = () => {
 
             }else{
                 console.log(userName.current)
-                userName.current.classList.add("invalid")
+                
+                userRefcon.current.style.border = '1px solid red'
+                passRefcon.current.style.border = '1px solid red'
+
+                setTimeout(() => {
+                    userRefcon.current.style.border = '1px solid black'
+                    passRefcon.current.style.border = '1px solid black'
+                }, 1000)
             }
         
 
@@ -47,18 +64,18 @@ const LandingPage = () => {
             
             <div className="left">
                 
-                <div className="head">
+                <div className="head" ref={mainLogo}>
                     <img src="https://magicbit.cc/wp-content/uploads/2023/06/magicbit-logo-footer.png" alt="" />
                     <h1 className="title">Robot as a Service</h1>
                     <h3 className="demo">Demo Version</h3>
                 </div>
                 
-                <div className="body">
+                <div className="body" ref={para}>
                     <h3 className="para">Magicbit Robot as a Service empowers easy access to robot programming through your web browser.  Write Python code and witness real-time execution on a physical Magicbit robot via a live video stream. This eliminates the need for physical setup, allowing you to focus on coding from the start.  Magicbit offers visual debugging and a user-friendly environment to turn your Python code into real-world robot actions.</h3>
                 </div>
 
                 <div className="foot">
-                    <button className="btn">Get Started</button>
+                    <button className="btn" ref={botBtn}>Learn More</button>
                 </div>
 
             </div>
@@ -70,12 +87,12 @@ const LandingPage = () => {
 
                     <div className="inputs">
                     
-                        <div className="userName inp">
+                        <div className="userName inp" ref={userRefcon}>
                             <PersonIcon/>
-                            <input type="text" name="" id="" placeholder='User ID' ref={userRef}/>
+                            <input type="text" name="" placeholder='User ID' ref={userRef}/>
                         </div>
 
-                        <div className="passw inp">
+                        <div className="passw inp" ref={passRefcon}>
                             <HttpsIcon/>
                             <input type="password" name="" id="" placeholder='Password' ref={passRef}/>
                         </div>
@@ -98,7 +115,7 @@ const LandingPage = () => {
                                 }
                                 } 
                                 onClick={() => {login()}}>
-                            {logging ? <CircularProgress size={30}/> : "Proceed"}
+                            {logging ? <CircularProgress size={30}/> : "Sign In"}
                         </button>
                         <h3 className="noAcc">Dont have an account ? </h3>
                         <button className="create">Create New Account</button>

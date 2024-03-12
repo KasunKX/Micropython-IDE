@@ -13,12 +13,13 @@
 .LeftPanel .examplesBtnCon {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .LeftPanel .examplesBtnCon button {
-  width: 50%;
-  min-height: 30px;
+  width: 95%;
+  min-height: 35px;
   border: none;
   border-radius: 5px;
   font-size: 1vw;
@@ -28,6 +29,7 @@
   border-top: 1%;
   border-bottom: 1%;
   outline: none;
+  margin-bottom: 1vw;
 }
 .LeftPanel .examplesBtnCon button:active {
   transform: scale(0.95, 0.95);

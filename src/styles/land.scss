@@ -24,6 +24,7 @@
             flex-direction: column;
             align-items: center;;
             height: 10%;
+            opacity: 0;
 
             & img{
                 width: 30%;
@@ -51,6 +52,13 @@
 
         & .body{
             height: 30%;
+            animation-name: paraAppear;
+            animation-delay: 0.75s;
+            animation-duration: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            position: relative;
+            top: 10%;
 
             & h3{
                 font-size: 1.2vw;
@@ -83,6 +91,14 @@
                 font-size: 1.15vw;
                 letter-spacing: 1px;
                 transition: 0.1s;
+                position: relative;
+                top: 20%;
+                animation-name: paraAppear;
+                animation-delay: 0.95s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-duration: 1s;
+                opacity: 0;
             }
 
             & button:hover{
@@ -209,4 +225,30 @@
     }
 
 
+}
+
+.appear{
+    animation: HeadAppear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    transition: 2s;
+}
+
+@keyframes HeadAppear{
+    from {
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes paraAppear{
+    from {
+        opacity: 0;
+        top: 10%;
+    }to{
+        opacity: 1;
+        top: 0;
+    }
 }

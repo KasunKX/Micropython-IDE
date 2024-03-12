@@ -1,8 +1,13 @@
 from machine import Pin
 import time
-led = Pin(16, Pin.OUT)
+
+leda = Pin(2, Pin.OUT)
+ledb = Pin(15, Pin.OUT)
+
 for i in range(10):
-     led.on()
+     leda.on()
+     ledb.off()
      time.sleep_ms(500)
-     led.off()
+     leda.off()
+     ledb.on()
      time.sleep_ms(500)

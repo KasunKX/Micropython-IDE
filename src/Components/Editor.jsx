@@ -98,7 +98,7 @@ const Editor = (props) => {
 
     const stopCode = () => {
         
-        fetch(`https://dpapi.magicbit.cc:8888/sendCode/08d1f9d0a1d0/`, {
+        fetch(`https://dpapi.magicbit.cc:8888/sendCode/08d1f9d0a1d0/`, { // 30
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -109,8 +109,6 @@ const Editor = (props) => {
         setOut("Execution Terminated !")
     }
 
-
-    
     return <>
         
         <div className="editorContainer">

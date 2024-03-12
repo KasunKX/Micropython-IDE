@@ -1,0 +1,161 @@
+[{
+		"Proj_index": 1,
+		"Proj_title": "Setting up DPBot with Python",
+		"Proj_picture": "basic/pimgs/1.jpg",
+		"Proj_tutorial": "basic/pdfs/1.pdf",
+		"Proj_desc": "Explains how to setup DPBot with python. Contains Pin Map and other info.",
+		"Proj_py" : "1"
+	},
+	{
+		"Proj_index": 2,
+		"Proj_title": "Blinking Signals",
+		"Proj_picture": "basic/pimgs/2.jpg",
+		"Proj_tutorial": "basic/pdfs/2.pdf",
+		"Proj_desc": "How to blink headlight LEDs",
+		"Proj_py" : "2"
+	},
+	{
+		"Proj_index": 3,
+		"Proj_title": "Shine Bright",
+		"Proj_picture": "basic/pimgs/3.jpg",
+		"Proj_tutorial": "basic/pdfs/3.pdf",
+		"Proj_desc": "Learn how to control brightness of headlights.",
+		"Proj_py" : "3"
+	},
+	{
+		"Proj_index": 4,
+		"Proj_title": "Automatic Night Headlight",
+		"Proj_picture": "basic/pimgs/4.jpg",
+		"Proj_tutorial": "basic/pdfs/4.pdf",
+		"Proj_desc": "Control headlights based on LDR readings.",
+		"Proj_py" : "4"
+	},
+	{
+		"Proj_index": 5,
+		"Proj_title": "Honk Your Way to Excitement",
+		"Proj_picture": "basic/pimgs/5.jpg",
+		"Proj_tutorial": "basic/pdfs/5.pdf",
+		"Proj_desc": "Use buzzer to make sounds.",
+		"Proj_py" : "5"
+	},
+	{
+		"Proj_index": 6,
+		"Proj_title": "Reminder to turn off light",
+		"Proj_picture": "basic/pimgs/6.jpg",
+		"Proj_tutorial": "basic/pdfs/6.pdf",
+		"Proj_desc": "Timing functions of the robot.",
+		"Proj_py" : "6"
+	},
+        {     
+		"Proj_index": 7,
+		"Proj_title": "Personalize Your Ride",
+		"Proj_picture": "basic/pimgs/7.jpg",
+		"Proj_tutorial": "basic/pdfs/7.pdf",
+		"Proj_desc": "Dispaly name in OLED." ,
+		"Proj_py" : "7"
+	},
+	{
+		"Proj_index": 8,
+		"Proj_title": "Reverse Warning System",
+		"Proj_picture": "basic/pimgs/8.jpg",
+		"Proj_tutorial": "basic/pdfs/8.pdf",
+		"Proj_desc": "Object detection using IR Sensor",
+		"Proj_py" : "8"
+	},
+	{
+		"Proj_index": 9,
+		"Proj_title": "Cooling System",
+		"Proj_picture": "basic/pimgs/9.jpg",
+		"Proj_tutorial": "basic/pdfs/9.pdf",
+		"Proj_desc": "Controlling the fan according to the temperature",
+		"Proj_py" : "9"
+	},
+	{
+		"Proj_index": 10,
+		"Proj_title": "Staying on Track",
+		"Proj_picture": "basic/pimgs/10.jpg",
+		"Proj_tutorial": "basic/pdfs/10.pdf",
+		"Proj_desc": "Black or white line detection using IR Sensor",
+		"Proj_py" : "10"
+	},
+	{
+		"Proj_index": 11,
+		"Proj_title": "Start and Drive",
+		"Proj_picture": "basic/pimgs/11.jpg",
+		"Proj_tutorial": "basic/pdfs/11.pdf",
+		"Proj_desc": "Control the direction and speed of the robot",
+		"Proj_py" : "11"
+	},
+	{
+		"Proj_index": 12,
+		"Proj_title": "Mastering Steering",
+		"Proj_picture": "basic/pimgs/12.jpg",
+		"Proj_tutorial": "basic/pdfs/12.pdf",
+		"Proj_desc": "Control the movements of the robot",
+		"Proj_py" : "12"
+	},
+ 	{ 
+		"Proj_index": 13,
+		"Proj_title": "Colorful Ride",
+		"Proj_picture": "basic/pimgs/13.jpg",
+		"Proj_tutorial": "basic/pdfs/13.pdf",
+		"Proj_desc": "Rainbow colors from RGB LEDs",
+		"Proj_py" : "13"
+	},
+ 	{ 
+		"Proj_index": 14,
+		"Proj_title": "Speed Warning Light",
+		"Proj_picture": "basic/pimgs/14.jpg",
+		"Proj_tutorial": "basic pdfs/14.pdf",
+		"Proj_desc": "Indication of speed levels using colors",
+		"Proj_py" : "14"
+	},
+ 	{ 
+		"Proj_index": 15,
+		"Proj_title": "Distance Matters",
+		"Proj_picture": "basic/pimgs/15.jpg",
+		"Proj_tutorial": "basic/pdfs/15.pdf",
+		"Proj_desc": "Distance to objects using ultrasonic sensor",
+		"Proj_py" : "15"
+	},
+ 	{ 
+		"Proj_index": 16,
+		"Proj_title": "Obstacle Avoiding Robot",
+		"Proj_picture": "basic/pimgs/16.jpg",
+		"Proj_tutorial": "basic/pdfs/16.pdf",
+		"Proj_desc": "Navigate robot by avoiding obstacles",
+		"Proj_py" : "16"
+	},
+ 	{ 
+		"Proj_index": 17,
+		"Proj_title": "Following the path",
+		"Proj_picture": "basic/pimgs/17.jpg",
+		"Proj_tutorial": "basic/pdfs/17.pdf",
+		"Proj_desc": "Navigate the robot to follow the black line",
+		"Proj_py" : "17"
+	},
+ 	{ 
+		"Proj_index": 18,
+		"Proj_title": "Weather update on wheels",
+		"Proj_picture": "basic/pimgs/18.jpg",
+		"Proj_tutorial": "basic/pdfs/18.pdf",
+		"Proj_desc": "Display temp. and light on OLED while moving",
+		"Proj_py" : "18"
+	},
+ 	{ 
+		"Proj_index": 19,
+		"Proj_title": "Speedometer on the Go",
+		"Proj_picture": "basic/pimgs/19.jpg",
+		"Proj_tutorial": "basic/pdfs/19.pdf",
+		"Proj_desc": "Display moving speed on the OLED",
+		"Proj_py" : "19"
+	},
+	{ 
+		"Proj_index": 20,
+		"Proj_title": "Secure your Ride",
+		"Proj_picture": "basic/pimgs/20.jpg",
+		"Proj_tutorial": "basic/pdfs/20.pdf",
+		"Proj_desc": "Detect motion by PIR sensor and notify via buzzer",
+		"Proj_py" : "20"
+	}
+	]

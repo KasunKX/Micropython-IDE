@@ -16,7 +16,8 @@ import libs from'../pylib/libraries.json'
 import DownloadIcon from '@mui/icons-material/Download';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import {saveAs} from 'file-saver'
-
+import examples from '../examples/exp.json'
+import scripts from '../exampleCode';
 
 export default function LeftPanel(props) {
 
@@ -131,7 +132,7 @@ const openFile = (e) => {
 
         <AccordionDetails>
 
-          {
+          {/* {
             fileList.map((e, i) => {
               let dis = 'grid'
 
@@ -177,30 +178,32 @@ const openFile = (e) => {
                 </div>
               </>
             })
-          }
+          } */}
+
+          <h4 style={{fontSize: '1vw'}}>File Explorer Under Construction</h4>
 
           <div className="fileButtons">
-            <button className="save" onClick={() => {savePyFile()}}>Save</button>
+            {/* <button className="save" onClick={() => {savePyFile()}}>Save</button> */}
             
 
-            <input
+            {/* <input
               type="file"
               ref={fileInputRef}
               onClick={openFile}
               accept=".py"
               style={{ display: 'none' }}
-            />
-            <button className="open" onClick={() => {
+            /> */}
+            {/* <button className="open" onClick={() => {
               fileInputRef.current.click()
             }}>
               Open
-          </button>
+          </button> */}
           </div>
 
           
 
           <div className="refreshFiles">
-            <RefreshIcon className='refreshIcon' onClick={getFiles}/>
+            {/* <RefreshIcon className='refreshIcon' onClick={getFiles}/> */}
           
           </div>
 
@@ -223,9 +226,28 @@ const openFile = (e) => {
         </AccordionSummary>
         <AccordionDetails>
           <div className="examplesBtnCon">
-            <button className="ex" onClick={() => {
+            
+            {/* <button className="ex" onClick={() => {
               setShowExamples(true)
-            }}>View Examples</button>
+            }}>View Examples</button> */}
+
+            {
+              examples.map((item, index) => {
+                return <>
+                  <button className="demo" onClick={() => {
+                    fetch(scripts[index]).then(e => {
+                      return e.text()
+                    }).then(e => {
+                      setCode(e)
+                    })
+                  }}>
+                    {item.Proj_title}
+                  </button>
+                </>
+              })
+            }
+
+
           </div>
         </AccordionDetails>
       </Accordion>
