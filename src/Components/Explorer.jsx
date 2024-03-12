@@ -267,7 +267,7 @@ const openFile = (e) => {
                 </>
               }) 
               :
-              <h2>-</h2>
+              <h2 style={{fontSize: '1vw'}}>Currently Not Available</h2>
             }
          </div>
 

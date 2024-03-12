@@ -3,12 +3,13 @@ import Navbar from "./Components/Nabar"
 import Editor from "./Components/Editor"
 import Console from "./Components/Console"
 import './styles/styles.css'
-import {useState, useEffect, useRef, useMemo} from 'react'
+import {useState, useEffect, useRef, useMemo, useCallback} from 'react'
 import Micropython from "./Micropython/mp"
 import CloseIcon from '@mui/icons-material/Close';
 import examples from './examples/exp.json'
 import ImageList from "./ImageList"
 import scripts from "./exampleCode"
+import {useLocation, useNavigate} from 'react-router-dom'
 
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
     const [output, setOutput] = useState('')
     const [code, setCode] = useState('#')
     const [showExamples, setShowExamples] = useState(false)
-
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const pythonInstance = useRef(new Micropython(files, setFiles))
 
@@ -87,13 +89,29 @@ const App = () => {
     }
 
     useEffect(() => {
-        console.log(scripts)
+
+        try{
+            location.state.authenticated ? console.log("Ok") : navigate('/')
+        }catch{
+            navigate('/')
+        }
+        
+       
         fetch(scripts[0]).then(e => {
             return e.text()
         }).then(e => {
-            console.log(e)
+            // console.log(e)
         })
     }, [])
+
+    const updateConsole = useCallback((newValue) => {
+
+        
+        setOutput(e => e+newValue)
+        console.log(output)
+        
+
+    }, [output])
 
     return <>
 
@@ -111,15 +129,26 @@ const App = () => {
         }}>
 
             <div className="leftExplorer gridCom">
-                <LeftPanel fileList={files} instance={pythonInstance.current} code={code} setCode={setCode} showExamples={showExamples} setShowExamples={setShowExamples}/>
+                <LeftPanel fileList={files} 
+                    instance={pythonInstance.current} 
+                    code={code} setCode={setCode} 
+                    showExamples={showExamples} 
+                    setShowExamples={setShowExamples}/>
             </div>
 
             <div className="middle gridCom">
-                <Editor instance={pythonInstance.current} code={code} setCode={setCode}/>
+                <Editor 
+                    instance={pythonInstance.current} 
+                    code={code} setCode={setCode}
+                    output={output} setOut={setOutput}/>
             </div>
 
             <div className="right gridCom">
-                <Console output={output} setOut={setOutput}/>
+                <Console 
+                    output={output} 
+                    setOut={setOutput}
+                    updateConsole={updateConsole}
+                    />
             </div>
         </div>
 

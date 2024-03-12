@@ -2,6 +2,7 @@ import logo from '../res/logo.png'
 import UsbOffIcon from '@mui/icons-material/UsbOff';
 import UsbIcon from '@mui/icons-material/Usb';
 import {useState, useCallback, useEffect} from 'react'
+import remote from '../res/wifi-solid.svg'
 
 
 const Navbar = (props) => {
@@ -19,12 +20,14 @@ const Navbar = (props) => {
         <nav>
             <div className="left">
                 <img src={logo} alt="" />
-                <h2 className='title'>Micropython</h2>
-                <h2 className="live">Live</h2>
+                <h2 className='title'>Robot as a Service</h2>
+            
+                    <img src={remote} className='remote' alt="" />
+                
             </div>
 
             <div className="right">
-                <button className="connect" onClick={connectDevice}>
+                {/* <button className="connect" onClick={connectDevice}>
                         {
                             connection ? <UsbIcon/> : <UsbOffIcon/>
                         }
@@ -32,7 +35,7 @@ const Navbar = (props) => {
                         {
                             connection ? 'Disconnect' : 'Connect'
                         }
-                </button>
+                </button> */}
             </div>
         </nav>
     </>

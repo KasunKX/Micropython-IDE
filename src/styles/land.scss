@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.land{
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+
+    & .left{
+        width: 65%;
+        padding: 1%;
+        background: rgb(35, 37, 62);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 5%;
+
+        & .head{
+            display: flex;
+            flex-direction: column;
+            align-items: center;;
+            height: 10%;
+
+            & img{
+                width: 30%;
+                min-width: 50px;
+            }
+
+            & .title{
+                font-weight: 500;
+                font-size: 3.5vw;
+                color: white;
+            }
+
+            & .demo{
+                font-size: 1.2vw;
+                color: rgb(255, 255, 255);
+                position: absolute;
+                text-align: left;
+                left: 58vw;
+                top: 97vh;
+                font-weight: 400;
+                font-size: 1vw;
+                
+            }
+        }
+
+        & .body{
+            height: 30%;
+
+            & h3{
+                font-size: 1.2vw;
+                color: rgb(206, 206, 206);
+                width: 80%;
+                letter-spacing: 1px;
+                line-height: 110%;
+                position: relative;
+                left: 10%;
+                text-align: center;
+                line-height: 200%;
+                font-weight: 400;
+            }   
+        }
+
+        & .foot{
+            width: 40%;
+            height: 5.5vh;
+            display: grid;
+            place-items: center;
+
+            & button{
+                width: 40%;
+                height: 100%;
+                background: orange;
+                color: white;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                font-size: 1.15vw;
+                letter-spacing: 1px;
+                transition: 0.1s;
+            }
+
+            & button:hover{
+                cursor: pointer;
+                background: rgb(255, 192, 75);
+            }
+
+            & button:active{
+                transform: scale(0.9, 0.9);
+            }
+        }
+    }
+
+    & .right{
+        width: 35%;
+        padding: 2%;
+        display: grid;
+        place-items: center;
+
+
+        & .form{
+            width: 82.5%;
+            height: 70%;
+            box-shadow: 0 0 15px 0 rgb(139, 139, 139);
+            border-radius: 20px;
+            padding: 2%;
+            padding-left: 4%;
+            padding-right: 4%;
+            display: flex;
+            flex-direction: column;
+    
+
+            & .title{
+                font-size: 2.75vw;
+                text-align: center;
+                letter-spacing: 2px;
+                color: rgb(35, 37, 62);
+            }
+
+            & .inputs{
+                margin-top: 3vh;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 6vh;
+
+                & .inp{
+                    width: 100%;
+                    border: 1px solid rgb(22, 22, 22);
+                    display: flex;
+                    align-items: center;
+                    height: 7vh;
+                    margin-top: 5vh;
+                    padding-left: 4%;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+
+                    & input{
+                        border: none;
+                        outline: none;
+                        height: 100%;
+                        margin-left: 4%;
+                        width: 98%;
+                        font-size: 1.15vw;
+                        letter-spacing: 1px;
+                        border-radius: 5px;
+                    }
+
+
+                }
+
+                & .fogot{
+                    font-weight: 400;
+                    font-size: 1vw;
+                    color: rgb(58, 58, 255);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                & .fogot{
+                    text-align: end;
+                }
+            }
+
+            & .buttons{
+                width: 100%;
+                
+                & button{
+                    height: 6vh;
+                    width: 100%;
+                    margin-bottom: 2vh;
+                }
+
+                & h3.noAcc{
+                    margin-bottom: 1vh;
+                }
+
+                & .noAcc{
+                    font-size: 1vw;
+                    font-weight: 400;
+                }
+
+                & .login{
+                    background: orange;
+                    font-size: 1.25vw;
+                    border: 2px solid black;
+                    outline: none;
+                    color: white;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                }
+
+                & button:active{
+                    transform: scale(0.925, 0.925);
+                }
+
+                & .create{
+                    background: rgb(255, 225, 168);
+                    font-size: 1.25vw;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+}
